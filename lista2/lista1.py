@@ -106,7 +106,7 @@ def exercicio7():
     model.setObjective(300 * x[1] + 400 * x[2] + 500 * x[3])
 
     model.solve()
-    x_sol = {i: x[i].value() for i in {1, 2}}
+    x_sol = {i: x[i].value() for i in {1, 2, 3}}
     print(f'resultado:={x_sol}')
 
 
